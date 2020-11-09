@@ -71,16 +71,4 @@ public class Persona {
         System.out.println("Edad: " + edad);
     }
     
-    @Override
-    public String toString(){
-        String informacion = "[";
-        informacion += "Nombre: " + nombre;
-        informacion += ", Apellido: "+ apellido;
-        informacion += ", Documento: "+ documento;
-        informacion += ", Edad: "+ edad;
-        informacion += "]";
-        return informacion;
-        // return "[Nombre: " + nombre + ", Apellido: " + apellidos....;
-    }
-    
 } // Fin de clase

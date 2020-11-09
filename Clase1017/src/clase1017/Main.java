@@ -40,13 +40,6 @@ public class Main {
         System.out.println("Edad: " + persona3.getEdad());
         
         //persona1.mostrarInformacion();
-        
-        // USANDO TO STRING
-        System.out.println("\nUsando toString");
-        System.out.println("Info: "+ persona1.toString());
-        System.out.println("Info 2: " + persona2.toString());
-        System.out.println("Info3: " + persona3);
-        
     }
     
 }
