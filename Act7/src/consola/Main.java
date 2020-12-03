@@ -1,5 +1,7 @@
 package consola;
 
+import java.util.Scanner;
+
 /**
  *
  * @author Marce marcelorum@gmail.com
@@ -22,6 +24,7 @@ public class Main {
         
         GestionAcademica ga = new GestionAcademica();
         
+        // EJERCICIO 1
         ga.agregarPersona(doc0, 0);
         ga.agregarPersona(est0, 1);
         ga.agregarPersona(doc1, 2);
@@ -33,6 +36,29 @@ public class Main {
         
         System.out.println("Personas dentro del colegio: ");
         System.out.println(ga.toString());
+        
+        //EJERCICIO 2
+        String ejer2 = ga.segundoObjeto();
+        System.out.println("\nEL segundo objeto " + ejer2);
+        
+        //EJERCICIO 3
+        System.out.println("\nCambiar nombre");
+        ga.cambiarNombre();
+        System.out.println("\n"+ ga.toString());
+        
+        //EJERCICIO 4
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Ingresar edad: ");
+        int edad = scanner.nextInt();
+        String ejer4 = ga.personasSegunEdad(edad);
+        System.out.println(ejer4);
+        
+        //EJERCICIO 5
+        String ejer5 = ga.soloGeneroFemenino();
+        System.out.println(ejer5);
+        
+        
+        
     }
     
 }

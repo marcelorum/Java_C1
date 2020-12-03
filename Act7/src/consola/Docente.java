@@ -29,7 +29,7 @@ public class Docente extends Persona {
 
     @Override
     public String toString() {
-        return super.toString() + "Docente{" + "especialidad=" + especialidad + '}';
+        return super.toString() + " es un docente con especialidad " + especialidad;
     }
     
     

@@ -29,7 +29,7 @@ public class Estudiante extends Persona {
 
     @Override
     public String toString() {
-        return super.toString() + "Estudiante{" + "aniosDeEstudio=" + aniosDeEstudio + '}';
+        return super.toString() + " es estudiante del año : " + aniosDeEstudio;
     }
     
     

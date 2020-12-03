@@ -22,20 +22,48 @@ public class GestionAcademica {
     }
     
     public String segundoObjeto(){
+        String informacion = "";
+        Persona segundaPersona = institucion[1];
+        if (segundaPersona instanceof Docente){
+            informacion += "es un Docente, ";
+        }else{
+            informacion += "es un Estudiante, ";
+        }
         
-        return null;
+        informacion += "nombre: " + segundaPersona.getNombre();
+        informacion += ", DNI: " + segundaPersona.getDocumento();
+        
+        return informacion;
     }
     
     public void cambiarNombre(){
+        int ultimo = institucion.length -1;
+        Persona pertemp = institucion[ultimo];
+        pertemp.setNombre("Estanislao");
         
     }
     
     public String personasSegunEdad (int edad){
-        return null;
+        String segunEdad = "";
+        for (Persona persona : institucion) {
+            if (persona.getEdad() < edad){
+                segunEdad += persona.toString() + "\n";
+            }
+        }
+        return segunEdad;
     }
     
     public String soloGeneroFemenino(){
-        return null;
+        String fems = "";
+        int contador = 0;
+        
+        for (Persona persona : institucion) {
+            if(persona.getGenero() == 0){
+                fems += persona.toString() + "\n";
+                contador++;
+            }
+        }
+        return fems;
     }
 
     @Override
@@ -48,16 +76,6 @@ public class GestionAcademica {
         listaPersonas += "]";
         return listaPersonas;
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     
     
     
